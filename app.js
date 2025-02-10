@@ -1,8 +1,12 @@
 //setup... this is similar to when we use our default tags in html
 const express = require("express")
-//activate or tells this app variable to be an exppress server
+//we have to use cors in order to host a front end and backend on the same device
+var cors = require('cors')
+//activate or tell this app variable to be an exppress server
 const app = express()
+app.use(cors())
 const router = express.Router()
+
 
 //making an api using routes
 // Routes are used to handle browser requests. They look like URLs. 
